@@ -1,0 +1,16 @@
+net: "/u/haiwang/projects/googlenet_cifar100/train_val_divide_cluster22_6.prototxt"
+test_iter: 15
+test_interval: 75
+test_initialization: false
+display: 40
+average_loss: 40
+base_lr: 0.001
+lr_policy: "step"
+stepsize: 600
+gamma: 0.8
+max_iter: 6000
+momentum: 0.9
+weight_decay: 0.0002
+snapshot: 75
+snapshot_prefix: "/work/cv2/haiwang/model/googlenet_cifar100_cluster22_6"
+solver_mode: GPU

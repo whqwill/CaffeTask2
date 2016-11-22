@@ -1,0 +1,6 @@
+./absolute_extract_norm.py test_branch_googlenet_random23_?_soft.o?????? branch.soft.random23.?
+./coarse_to_cluster.py all_label_last random23.cluster.label test.categories.label.random23
+./merge_coarse_soft.py all_soft_last random23.cluster.label coarse.soft.random23
+./total_hard_hard_label.py branch.soft.random23. 1 10 random23.cluster test.categories.label.random23 all_label_hard_random23
+./total_soft_label.py coarse.soft.random23 branch.soft.random23. 1 10 random23.cluster all_label_soft_random23
+./branch_accuracy_all.py all_label_last all_label_hard_random23 all_label_soft_random23 all_label.correct test.categories.label.random23

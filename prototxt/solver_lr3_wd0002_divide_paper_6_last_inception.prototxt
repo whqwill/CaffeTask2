@@ -1,0 +1,16 @@
+net: "/u/haiwang/projects/googlenet_cifar100/train_val_divide_paper_6_last_inception.prototxt"
+test_iter: 30
+test_interval: 400
+test_initialization: false
+display: 40
+average_loss: 40
+base_lr: 0.001
+lr_policy: "step"
+stepsize: 4000
+gamma: 0.96
+max_iter: 16000
+momentum: 0.9
+weight_decay: 0.0002
+snapshot: 2000
+snapshot_prefix: "/work/cv2/haiwang/model/googlenet_cifar100_lr3_wd0002_divide_paper_6_last_inception"
+solver_mode: GPU

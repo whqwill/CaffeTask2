@@ -1,0 +1,16 @@
+net: "/u/haiwang/projects/googlenet_cifar100/train_val_dp05_higher_continue_last_layer.prototxt"
+test_iter: 500
+test_interval: 1250
+test_initialization: false
+display: 40
+average_loss: 40
+base_lr: 0.00064
+lr_policy: "step"
+stepsize: 10000
+gamma: 0.8
+max_iter: 1000000
+momentum: 0.9
+weight_decay: 0.0002
+snapshot: 1250
+snapshot_prefix: "/work/cv2/haiwang/model/googlenet_cifar100_new_sp10000_lr001_gm8_dp05_higher_continue_last_layer"
+solver_mode: GPU
